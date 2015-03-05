@@ -28,8 +28,17 @@ class ArticlesController extends AppController{
     	}
     }
     
-} 
+    public function detail($id){
+        $articles = $this->Article->find('all', array('order' => 'Article.id',
+                                         'conditions' => array('Article.id' => $id)));
+        $this->set(array(
+                        'id' => $id, 
+                   'articles' => $articles)
+                   );
+        
+    }
   
+}
 
 
 ?>

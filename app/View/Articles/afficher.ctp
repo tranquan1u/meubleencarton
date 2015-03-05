@@ -7,12 +7,8 @@
             <td>Prix</td>
             <td></td>
         </tr>
-        <?php
-            
-        debug($articles);
-        
-        
-        
+        <?php       
+
         
         foreach ($articles as $article) : ?>
             <tr><td height="100" width="200">
@@ -27,12 +23,15 @@
                 echo '</td><td>'; 
                 $id = $article['Article']['id'];
                 ?>
-                <?php echo '<a href="http://localhost/hackaton/meubleencarton/articles/acheter/'.$id.'>acheter</a> '?>  
-                <?php echo $this->Form->create('Article'); ?>
-                <?php echo $this->Form->hidden('item_id',array('value'=>$id)); ?>
-                <?php echo $this->Form->end('Acheter').'</td></tr>';
+                <td>
+                    <?php echo $this->Html->link('detail', array('controller' => 'articles',
+                                                  'action' => 'detail',$id
+                                                  ))?>
+                    </td></tr>
+    
+                <?php 
         endforeach;
         
         ?>
-
+                
     </table>
