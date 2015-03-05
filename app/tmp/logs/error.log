@@ -996,3 +996,26 @@ Stack Trace:
 #0 C:\wamp\www\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 >>>>>>> 1c813145dca0e9e9e940a462d780f744efd7e058
 #1 {main}
+2015-03-05 14:42:24 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /hackaton/meubleencarton/js/vote.js
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-05 14:42:31 Error: [MissingActionException] Action Articles::ajouter() could not be found.
+Exception Attributes: array (
+  'controller' => 'Articles',
+  'action' => 'ajouter',
+)
+Request URL: /hackaton/meubleencarton/articles/ajouter/1
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Scaffold.php(150): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ArticlesController), Object(CakeRequest))
+#2 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#5 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
