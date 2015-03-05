@@ -65,7 +65,7 @@ CREATE TABLE `articles` (
   KEY `color_id` (`color_id`),
   CONSTRAINT `articles_ibfk_2` FOREIGN KEY (`color_id`) REFERENCES `colors` (`id`),
   CONSTRAINT `articles_ibfk_1` FOREIGN KEY (`media_id`) REFERENCES `media` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -74,7 +74,7 @@ CREATE TABLE `articles` (
 
 LOCK TABLES `articles` WRITE;
 /*!40000 ALTER TABLE `articles` DISABLE KEYS */;
-INSERT INTO `articles` VALUES (1,'canape','confortable',5,1,1);
+INSERT INTO `articles` VALUES (1,'canape','confortable',5,1,1),(2,'un name','une description',100,1,1);
 /*!40000 ALTER TABLE `articles` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -135,13 +135,13 @@ DROP TABLE IF EXISTS `highlights`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `highlights` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(256) NOT NULL,
   `description` text NOT NULL,
   `created` datetime NOT NULL,
   `updated` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -150,6 +150,7 @@ CREATE TABLE `highlights` (
 
 LOCK TABLES `highlights` WRITE;
 /*!40000 ALTER TABLE `highlights` DISABLE KEYS */;
+INSERT INTO `highlights` VALUES (1,'hfskj','hudfjqshdjislqvhjdksmqfhl','2015-03-25 00:00:00','2015-03-28 00:00:00');
 /*!40000 ALTER TABLE `highlights` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -176,6 +177,7 @@ CREATE TABLE `is_highlighteds` (
 
 LOCK TABLES `is_highlighteds` WRITE;
 /*!40000 ALTER TABLE `is_highlighteds` DISABLE KEYS */;
+INSERT INTO `is_highlighteds` VALUES (1,1);
 /*!40000 ALTER TABLE `is_highlighteds` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -471,4 +473,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-03-05 16:16:21
+-- Dump completed on 2015-03-05 16:53:22
