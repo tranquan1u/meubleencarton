@@ -388,3 +388,263 @@ Stack Trace:
 #4 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
 #5 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
+2015-03-05 13:51:14 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /hackaton/meubleencarton/js/vote.js
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-05 13:55:59 Error: [MissingActionException] Action Articles::ajouter() could not be found.
+Exception Attributes: array (
+  'controller' => 'Articles',
+  'action' => 'ajouter',
+)
+Request URL: /hackaton/meubleencarton/articles/ajouter/1
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Scaffold.php(150): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ArticlesController), Object(CakeRequest))
+#2 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#5 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-03-05 14:10:46 Error: [MissingTableException] Table votes for model Vote was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'votes',
+  'class' => 'Vote',
+  'ds' => 'default',
+)
+Request URL: /hackaton/meubleencarton/articles/detail/1
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Model\Model.php(3644): Model->setSource('votes')
+#1 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Model\Model.php(3142): Model->getDataSource()
+#2 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Model\Model.php(3055): Model->_findCount('before', Array)
+#3 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Model\Model.php(2989): Model->buildQuery('count', Array)
+#4 C:\wamp\www\hackaton\meubleencarton\app\Controller\VotesController.php(12): Model->find('count', Array)
+#5 [internal function]: VotesController->nblike('1')
+#6 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(VotesController), Array)
+#7 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(VotesController), Object(CakeRequest))
+#9 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Core\Object.php(106): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#10 C:\wamp\www\hackaton\meubleencarton\app\View\Articles\detail.ctp(39): Object->requestAction('/votes/nblike/1')
+#11 C:\wamp\www\hackaton\meubleencarton\lib\Cake\View\View.php(961): include('C:\wamp\www\hac...')
+#12 C:\wamp\www\hackaton\meubleencarton\lib\Cake\View\View.php(923): View->_evaluate('C:\wamp\www\hac...', Array)
+#13 C:\wamp\www\hackaton\meubleencarton\lib\Cake\View\View.php(473): View->_render('C:\wamp\www\hac...')
+#14 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#15 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#16 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#17 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#18 {main}
+2015-03-05 14:14:25 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /hackaton/meubleencarton/js/vote.js
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-05 14:14:52 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /hackaton/meubleencarton/js/vote.js
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-05 14:22:02 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /hackaton/meubleencarton/js/vote.js
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-05 14:22:04 Error: [MissingViewException] View file "Votes\like.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Votes\\like.ctp',
+)
+Request URL: /hackaton/meubleencarton/votes/like/1/1
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#2 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(VotesController), Object(CakeRequest))
+#4 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-05 14:24:18 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /hackaton/meubleencarton/js/vote.js
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-05 14:24:20 Error: [MissingControllerException] Controller class PlayersController could not be found.
+Exception Attributes: array (
+  'class' => 'PlayersController',
+  'plugin' => NULL,
+)
+Request URL: /hackaton/meubleencarton/players/addplayer
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-05 14:24:54 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /hackaton/meubleencarton/js/vote.js
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-05 14:24:57 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /hackaton/meubleencarton/js/vote.js
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-05 14:25:30 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /hackaton/meubleencarton/js/vote.js
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-05 14:25:32 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /hackaton/meubleencarton/js/vote.js
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-05 14:25:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /hackaton/meubleencarton/js/vote.js
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-05 14:25:39 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /hackaton/meubleencarton/js/vote.js
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-05 14:25:43 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /hackaton/meubleencarton/js/vote.js
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-05 14:26:18 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /hackaton/meubleencarton/js/vote.js
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-05 14:26:20 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /hackaton/meubleencarton/js/vote.js
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-05 14:26:39 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /hackaton/meubleencarton/js/vote.js
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-05 14:26:41 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /hackaton/meubleencarton/js/vote.js
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-05 14:26:43 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /hackaton/meubleencarton/js/vote.js
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-05 14:27:32 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /hackaton/meubleencarton/js/vote.js
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-05 14:27:38 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /hackaton/meubleencarton/js/vote.js
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-05 14:27:42 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /hackaton/meubleencarton/js/vote.js
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-05 14:27:59 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /hackaton/meubleencarton/js/vote.js
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-05 14:28:00 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /hackaton/meubleencarton/js/vote.js
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
