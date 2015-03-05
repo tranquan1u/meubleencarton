@@ -23,7 +23,9 @@
 		<?php foreach ($items as $key => $value): ?>
 		    <div class="item <?php echo ($i==0)? 'active' :  '' ?>">
 		        <center>
-		        <?php echo '<a href="http://localhost/meubleencarton/articles/detail/1">'.$this->Html->image($value['Article']['Media']['path'], array('altenrate' => 'l\'image ne s\'affiche pas ', 'class'=>'item')).'</a>' ?>
+		        <a href="/meubleencarton/articles/detail/<?php echo $value['Article']['id'] ?>" >
+		         <?php echo 	 $this->Html->image($value['Article']['Media']['path'], array('altenrate' => 'l\'image ne s\'affiche pas ', 'class'=>'item')) ?>
+		     	</a>
 		        	<?php $j++ ?>
 	        		<div class="name"><?php echo $value['Article']['name'] ?></div>
 					<div class="desc"><?php echo $value['Article']['description'] ?></div>
@@ -49,3 +51,4 @@
   </a>
 </div>
 
+<?php //debug($this->urlBase); ?>
