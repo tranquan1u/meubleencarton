@@ -2,7 +2,7 @@
 
 class ArticlesController extends AppController{
     
-    public $helpers = array ('Html');
+    public $helpers = array ('Html', 'Item');
     public $scaffold;
 
 

@@ -589,3 +589,91 @@ Stack Trace:
 #5 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
 >>>>>>> 848048dfb3bf226c66d2b3d204c8039790896b1f
+2015-03-05 14:31:37 Error: [MissingHelperException] Helper class ItemHelper could not be found.
+Exception Attributes: array (
+  'class' => 'ItemHelper',
+  'plugin' => false,
+)
+Request URL: /meubleencarton/articles/afficher
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Item')
+#1 C:\wamp\www\meubleencarton\lib\Cake\View\View.php(848): HelperCollection->__isset('Item')
+#2 C:\wamp\www\meubleencarton\app\View\Articles\afficher.ctp(13): View->__get('Item')
+#3 C:\wamp\www\meubleencarton\lib\Cake\View\View.php(961): include('C:\\wamp\\www\\meu...')
+#4 C:\wamp\www\meubleencarton\lib\Cake\View\View.php(923): View->_evaluate('C:\\wamp\\www\\meu...', Array)
+#5 C:\wamp\www\meubleencarton\lib\Cake\View\View.php(473): View->_render('C:\\wamp\\www\\meu...')
+#6 C:\wamp\www\meubleencarton\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#7 C:\wamp\www\meubleencarton\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\wamp\www\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#9 C:\wamp\www\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-03-05 14:32:05 Error: [MissingHelperException] Helper class ItemHelper could not be found.
+Exception Attributes: array (
+  'class' => 'ItemHelper',
+  'plugin' => false,
+)
+Request URL: /meubleencarton/articles/afficher
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Item')
+#1 C:\wamp\www\meubleencarton\lib\Cake\View\View.php(848): HelperCollection->__isset('Item')
+#2 C:\wamp\www\meubleencarton\app\View\Articles\afficher.ctp(13): View->__get('Item')
+#3 C:\wamp\www\meubleencarton\lib\Cake\View\View.php(961): include('C:\\wamp\\www\\meu...')
+#4 C:\wamp\www\meubleencarton\lib\Cake\View\View.php(923): View->_evaluate('C:\\wamp\\www\\meu...', Array)
+#5 C:\wamp\www\meubleencarton\lib\Cake\View\View.php(473): View->_render('C:\\wamp\\www\\meu...')
+#6 C:\wamp\www\meubleencarton\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#7 C:\wamp\www\meubleencarton\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\wamp\www\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#9 C:\wamp\www\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-03-05 14:32:14 Error: [MissingHelperException] Helper class ItemHelper could not be found.
+Exception Attributes: array (
+  'class' => 'ItemHelper',
+  'plugin' => false,
+)
+Request URL: /meubleencarton/articles/afficher
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Item')
+#1 C:\wamp\www\meubleencarton\lib\Cake\View\View.php(848): HelperCollection->__isset('Item')
+#2 C:\wamp\www\meubleencarton\app\View\Articles\afficher.ctp(13): View->__get('Item')
+#3 C:\wamp\www\meubleencarton\lib\Cake\View\View.php(961): include('C:\\wamp\\www\\meu...')
+#4 C:\wamp\www\meubleencarton\lib\Cake\View\View.php(923): View->_evaluate('C:\\wamp\\www\\meu...', Array)
+#5 C:\wamp\www\meubleencarton\lib\Cake\View\View.php(473): View->_render('C:\\wamp\\www\\meu...')
+#6 C:\wamp\www\meubleencarton\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#7 C:\wamp\www\meubleencarton\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\wamp\www\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#9 C:\wamp\www\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-03-05 14:32:36 Error: [MissingHelperException] Helper class ItemHelper could not be found.
+Exception Attributes: array (
+  'class' => 'ItemHelper',
+  'plugin' => false,
+)
+Request URL: /meubleencarton/articles/afficher
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\lib\Cake\View\View.php(897): HelperCollection->load('Item', Array)
+#1 C:\wamp\www\meubleencarton\lib\Cake\View\View.php(354): View->loadHelpers()
+#2 C:\wamp\www\meubleencarton\lib\Cake\Controller\Controller.php(1247): View->__construct(Object(ArticlesController))
+#3 C:\wamp\www\meubleencarton\lib\Cake\Controller\Controller.php(946): Controller->_getViewObject()
+#4 C:\wamp\www\meubleencarton\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#5 C:\wamp\www\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#6 C:\wamp\www\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-03-05 14:32:55 Error: Fatal Error (1): Call to a member function image() on a non-object in [C:\wamp\www\meubleencarton\app\View\Helper\ItemHelper.php, line 11]
+2015-03-05 14:32:55 Error: [FatalErrorException] Call to a member function image() on a non-object
+Request URL: /meubleencarton/articles/afficher
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\meu...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\meu...', 11, Array)
+#2 C:\wamp\www\meubleencarton\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\meu...', 11, Array)
+#3 C:\wamp\www\meubleencarton\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-05 14:34:18 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /meubleencarton/img/chemin/chemin
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
