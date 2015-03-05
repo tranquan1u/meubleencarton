@@ -5,6 +5,10 @@ class ArticlesController extends AppController{
     public $helpers = array ('Html', 'Item');
     public $scaffold;
 
+    public function beforeFilter() {
+        $this->Auth->allow();
+    }
+
 
     public function afficher(){
       $articles = $this->Article->find('all', array('order' => 'Article.id'));

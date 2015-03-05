@@ -31,7 +31,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->Html->css('style.css');
 
 		echo $this->Html->script('bootstrap.js');
-
+                echo $this->Html->script('jquery-2.1.3.min.js');
+                echo $this->Js->set('url',$this->request->base);
+                
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
@@ -54,5 +56,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			</p>
 		</div>
 	</div>
+    <?php echo $scripts_for_layout; ?>
+    
 </body>
 </html>

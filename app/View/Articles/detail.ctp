@@ -5,6 +5,9 @@
             <td>Prix</td>
             <td>Description</td>
             <td>couleur</td>
+            <td>nbLike</td>
+            <td> </td>
+            <td> </td>
             <td> </td>
         </tr>
         <?php              
@@ -18,7 +21,7 @@
                     <ul>                 
                 <?php echo $article['Article']['name']; ?>
                     </ul>
-                </td height="100" width="200"> 
+                </td> 
                 
                 <td>
                <?php echo $article['Article']['price']; ?>
@@ -33,7 +36,26 @@
                </td>
                
                <td>
-                    <?php echo $this->Html->link('ajouter', array('controller' => 'articles',
+                   <?php
+                    $nblikes = $this->requestAction('/votes/nblike/'.$id);
+                   
+                    echo $nblikes;  ?>
+               </td>
+               
+               <td>
+                    <?php echo $this->Html->link('like', array('controller' => 'votes',
+                                                  'action' => 'like',$id,1
+                                                  ))?>                   
+               </td>
+               
+               <td>
+                   <?php echo $this->Html->link('ajouter commentaire', array('controller' => 'comments',
+                                                  'action' => 'add',$id,1
+                                                  ))?>      
+               </td>
+               
+               <td>
+                    <?php echo $this->Html->link('ajouter au panier', array('controller' => 'articles',
                                                   'action' => 'ajouter',$id
                                                   ))?>
                     </td>
@@ -44,3 +66,5 @@
         ?>
                 
     </table>
+
+<?php $this->Html->script('vote.js', array('inline' => false)); ?>

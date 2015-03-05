@@ -65,7 +65,7 @@ CREATE TABLE `articles` (
   KEY `color_id` (`color_id`),
   CONSTRAINT `articles_ibfk_2` FOREIGN KEY (`color_id`) REFERENCES `colors` (`id`),
   CONSTRAINT `articles_ibfk_1` FOREIGN KEY (`media_id`) REFERENCES `media` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -74,6 +74,7 @@ CREATE TABLE `articles` (
 
 LOCK TABLES `articles` WRITE;
 /*!40000 ALTER TABLE `articles` DISABLE KEYS */;
+INSERT INTO `articles` VALUES (1,'canape','confortable',5,1,1),(2,'un name','une description',100,1,1);
 /*!40000 ALTER TABLE `articles` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -88,7 +89,7 @@ CREATE TABLE `colors` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `color` varchar(256) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -97,6 +98,7 @@ CREATE TABLE `colors` (
 
 LOCK TABLES `colors` WRITE;
 /*!40000 ALTER TABLE `colors` DISABLE KEYS */;
+INSERT INTO `colors` VALUES (1,'rouge');
 /*!40000 ALTER TABLE `colors` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -133,13 +135,13 @@ DROP TABLE IF EXISTS `highlights`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `highlights` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(256) NOT NULL,
   `description` text NOT NULL,
   `created` datetime NOT NULL,
   `updated` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -148,43 +150,45 @@ CREATE TABLE `highlights` (
 
 LOCK TABLES `highlights` WRITE;
 /*!40000 ALTER TABLE `highlights` DISABLE KEYS */;
+INSERT INTO `highlights` VALUES (1,'hfskj','hudfjqshdjislqvhjdksmqfhl','2015-03-25 00:00:00','2015-03-28 00:00:00');
 /*!40000 ALTER TABLE `highlights` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `isHighlighted`
+-- Table structure for table `is_highlighteds`
 --
 
-DROP TABLE IF EXISTS `isHighlighted`;
+DROP TABLE IF EXISTS `is_highlighteds`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `isHighlighted` (
+CREATE TABLE `is_highlighteds` (
   `article_id` int(11) NOT NULL,
   `highlight_id` int(11) NOT NULL,
   PRIMARY KEY (`article_id`,`highlight_id`),
   KEY `highlight_id` (`highlight_id`),
-  CONSTRAINT `isHighlighted_ibfk_2` FOREIGN KEY (`highlight_id`) REFERENCES `highlights` (`id`),
-  CONSTRAINT `isHighlighted_ibfk_1` FOREIGN KEY (`article_id`) REFERENCES `articles` (`id`)
+  CONSTRAINT `is_highlighteds_ibfk_2` FOREIGN KEY (`highlight_id`) REFERENCES `highlights` (`id`),
+  CONSTRAINT `is_highlighteds_ibfk_1` FOREIGN KEY (`article_id`) REFERENCES `articles` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `isHighlighted`
+-- Dumping data for table `is_highlighteds`
 --
 
-LOCK TABLES `isHighlighted` WRITE;
-/*!40000 ALTER TABLE `isHighlighted` DISABLE KEYS */;
-/*!40000 ALTER TABLE `isHighlighted` ENABLE KEYS */;
+LOCK TABLES `is_highlighteds` WRITE;
+/*!40000 ALTER TABLE `is_highlighteds` DISABLE KEYS */;
+INSERT INTO `is_highlighteds` VALUES (1,1);
+/*!40000 ALTER TABLE `is_highlighteds` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `isIn`
+-- Table structure for table `isin`
 --
 
-DROP TABLE IF EXISTS `isIn`;
+DROP TABLE IF EXISTS `isin`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `isIn` (
+CREATE TABLE `isin` (
   `article_id` int(11) NOT NULL,
   `room_id` int(11) NOT NULL,
   PRIMARY KEY (`article_id`,`room_id`),
@@ -195,22 +199,22 @@ CREATE TABLE `isIn` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `isIn`
+-- Dumping data for table `isin`
 --
 
-LOCK TABLES `isIn` WRITE;
-/*!40000 ALTER TABLE `isIn` DISABLE KEYS */;
-/*!40000 ALTER TABLE `isIn` ENABLE KEYS */;
+LOCK TABLES `isin` WRITE;
+/*!40000 ALTER TABLE `isin` DISABLE KEYS */;
+/*!40000 ALTER TABLE `isin` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `madeOf`
+-- Table structure for table `madeof`
 --
 
-DROP TABLE IF EXISTS `madeOf`;
+DROP TABLE IF EXISTS `madeof`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `madeOf` (
+CREATE TABLE `madeof` (
   `article_id` int(11) NOT NULL,
   `type_id` int(11) NOT NULL,
   PRIMARY KEY (`article_id`),
@@ -221,12 +225,12 @@ CREATE TABLE `madeOf` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `madeOf`
+-- Dumping data for table `madeof`
 --
 
-LOCK TABLES `madeOf` WRITE;
-/*!40000 ALTER TABLE `madeOf` DISABLE KEYS */;
-/*!40000 ALTER TABLE `madeOf` ENABLE KEYS */;
+LOCK TABLES `madeof` WRITE;
+/*!40000 ALTER TABLE `madeof` DISABLE KEYS */;
+/*!40000 ALTER TABLE `madeof` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -241,7 +245,7 @@ CREATE TABLE `media` (
   `name` varchar(256) NOT NULL,
   `path` varchar(256) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -250,6 +254,7 @@ CREATE TABLE `media` (
 
 LOCK TABLES `media` WRITE;
 /*!40000 ALTER TABLE `media` DISABLE KEYS */;
+INSERT INTO `media` VALUES (1,'poto','cake.icon.png');
 /*!40000 ALTER TABLE `media` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -308,13 +313,13 @@ LOCK TABLES `ordered` WRITE;
 UNLOCK TABLES;
 
 --
--- Table structure for table `orderedBy`
+-- Table structure for table `orderedby`
 --
 
-DROP TABLE IF EXISTS `orderedBy`;
+DROP TABLE IF EXISTS `orderedby`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `orderedBy` (
+CREATE TABLE `orderedby` (
   `user_id` int(11) NOT NULL,
   `order_id` int(11) NOT NULL,
   PRIMARY KEY (`user_id`,`order_id`),
@@ -325,12 +330,12 @@ CREATE TABLE `orderedBy` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `orderedBy`
+-- Dumping data for table `orderedby`
 --
 
-LOCK TABLES `orderedBy` WRITE;
-/*!40000 ALTER TABLE `orderedBy` DISABLE KEYS */;
-/*!40000 ALTER TABLE `orderedBy` ENABLE KEYS */;
+LOCK TABLES `orderedby` WRITE;
+/*!40000 ALTER TABLE `orderedby` DISABLE KEYS */;
+/*!40000 ALTER TABLE `orderedby` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -436,30 +441,27 @@ LOCK TABLES `users` WRITE;
 UNLOCK TABLES;
 
 --
--- Table structure for table `vote`
+-- Table structure for table `votes`
 --
 
-DROP TABLE IF EXISTS `vote`;
+DROP TABLE IF EXISTS `votes`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `vote` (
+CREATE TABLE `votes` (
   `user_id` int(11) NOT NULL,
   `article_id` int(11) NOT NULL,
   `vote` int(11) NOT NULL,
-  PRIMARY KEY (`user_id`,`article_id`),
-  KEY `article_id` (`article_id`),
-  CONSTRAINT `vote_ibfk_2` FOREIGN KEY (`article_id`) REFERENCES `articles` (`id`),
-  CONSTRAINT `vote_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)
+  PRIMARY KEY (`user_id`,`article_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `vote`
+-- Dumping data for table `votes`
 --
 
-LOCK TABLES `vote` WRITE;
-/*!40000 ALTER TABLE `vote` DISABLE KEYS */;
-/*!40000 ALTER TABLE `vote` ENABLE KEYS */;
+LOCK TABLES `votes` WRITE;
+/*!40000 ALTER TABLE `votes` DISABLE KEYS */;
+/*!40000 ALTER TABLE `votes` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -471,4 +473,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-03-05 11:43:09
+-- Dump completed on 2015-03-05 16:53:22
