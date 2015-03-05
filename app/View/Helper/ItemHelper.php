@@ -17,14 +17,16 @@ class ItemHelper extends AppHelper {
 
                 </ul></td height="100" width="200"> <td>
                <?php echo $article['Article']['price'].'</td>';
-                echo '</td><td>'; 
+                //echo '</td><td>'; 
                 $id = $article['Article']['id'];
                 ?>
                 <td>
                     <?php echo $this->Html->link('detail', array('controller' => 'articles',
                                                   'action' => 'detail',$id
                                                   ))?>
-                    </td></tr>
+                    </td>
+
+                  </tr>
     
                 <?php 
         endforeach;
