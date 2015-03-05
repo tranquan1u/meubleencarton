@@ -996,6 +996,7 @@ Stack Trace:
 #0 C:\wamp\www\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 >>>>>>> 1c813145dca0e9e9e940a462d780f744efd7e058
 #1 {main}
+<<<<<<< HEAD
 2015-03-05 14:42:24 Error: [MissingControllerException] Controller class JsController could not be found.
 Exception Attributes: array (
   'class' => 'JsController',
@@ -1019,3 +1020,58 @@ Stack Trace:
 #4 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
 #5 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
+=======
+2015-03-05 15:38:02 Error: [MissingComponentException] Component class ToolbarComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ToolbarComponent',
+  'plugin' => 'DebugKit',
+)
+Request URL: /www/private/meubleencarton/
+Stack Trace:
+#0 /home/nico/Programmation/www/private/meubleencarton/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#1 /home/nico/Programmation/www/private/meubleencarton/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(PagesController))
+#2 /home/nico/Programmation/www/private/meubleencarton/lib/Cake/Routing/Dispatcher.php(188): Controller->constructClasses()
+#3 /home/nico/Programmation/www/private/meubleencarton/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#4 /home/nico/Programmation/www/private/meubleencarton/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-05 15:38:35 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: NO)',
+  'enabled' => true,
+)
+Request URL: /www/private/meubleencarton/
+Stack Trace:
+#0 /home/nico/Programmation/www/private/meubleencarton/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /home/nico/Programmation/www/private/meubleencarton/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /home/nico/Programmation/www/private/meubleencarton/lib/Cake/Model/Model.php(3617): ConnectionManager::getDataSource('default')
+#3 /home/nico/Programmation/www/private/meubleencarton/lib/Cake/Model/Model.php(1155): Model->setDataSource('default')
+#4 /home/nico/Programmation/www/private/meubleencarton/lib/Cake/Model/Model.php(3644): Model->setSource('is_highlighteds')
+#5 /home/nico/Programmation/www/private/meubleencarton/lib/Cake/Model/Model.php(3022): Model->getDataSource()
+#6 /home/nico/Programmation/www/private/meubleencarton/lib/Cake/Model/Model.php(2994): Model->_readDataSource('all', Array)
+#7 /home/nico/Programmation/www/private/meubleencarton/app/Controller/PagesController.php(38): Model->find('all', Array)
+#8 [internal function]: PagesController->display('home')
+#9 /home/nico/Programmation/www/private/meubleencarton/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#10 /home/nico/Programmation/www/private/meubleencarton/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /home/nico/Programmation/www/private/meubleencarton/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#12 /home/nico/Programmation/www/private/meubleencarton/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-05 15:39:28 Error: [MissingTableException] Table is_highlighteds for model IsHighlighted was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'is_highlighteds',
+  'class' => 'IsHighlighted',
+  'ds' => 'default',
+)
+Request URL: /www/private/meubleencarton/
+Stack Trace:
+#0 /home/nico/Programmation/www/private/meubleencarton/lib/Cake/Model/Model.php(3644): Model->setSource('is_highlighteds')
+#1 /home/nico/Programmation/www/private/meubleencarton/lib/Cake/Model/Model.php(3022): Model->getDataSource()
+#2 /home/nico/Programmation/www/private/meubleencarton/lib/Cake/Model/Model.php(2994): Model->_readDataSource('all', Array)
+#3 /home/nico/Programmation/www/private/meubleencarton/app/Controller/PagesController.php(38): Model->find('all', Array)
+#4 [internal function]: PagesController->display('home')
+#5 /home/nico/Programmation/www/private/meubleencarton/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#6 /home/nico/Programmation/www/private/meubleencarton/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#7 /home/nico/Programmation/www/private/meubleencarton/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#8 /home/nico/Programmation/www/private/meubleencarton/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+>>>>>>> 9dc23dfe5b4711bac4a32917816009b2fd5d1bf7
