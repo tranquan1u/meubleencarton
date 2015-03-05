@@ -59,7 +59,7 @@ class AppController extends Controller {
 			'admin' => 10,
 			'user'  => 5
 		);
-
+		
 		if(isset($roles[$this->request->params['prefix']]))
 		{
 			$lvlAction = $roles[$this->request->params['prefix']];
