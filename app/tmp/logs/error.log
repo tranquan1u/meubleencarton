@@ -2153,3 +2153,91 @@ Request URL: /meubleencarton/css/sky.jpg
 Stack Trace:
 #0 C:\wamp\www\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-03-05 18:20:41 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /meubleencarton/Pages/display
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\wamp\www\meubleencarton\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(3617): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(3644): Model->setSource('is_highlighteds')
+#5 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(3022): Model->getDataSource()
+#6 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(2994): Model->_readDataSource('all', Array)
+#7 C:\wamp\www\meubleencarton\app\Controller\PagesController.php(46): Model->find('all', Array)
+#8 [internal function]: PagesController->display()
+#9 C:\wamp\www\meubleencarton\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#10 C:\wamp\www\meubleencarton\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#12 C:\wamp\www\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-05 18:21:31 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /meubleencarton/Pages/display
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\wamp\www\meubleencarton\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(3617): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(3644): Model->setSource('is_highlighteds')
+#5 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(3022): Model->getDataSource()
+#6 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(2994): Model->_readDataSource('all', Array)
+#7 C:\wamp\www\meubleencarton\app\Controller\PagesController.php(46): Model->find('all', Array)
+#8 [internal function]: PagesController->display()
+#9 C:\wamp\www\meubleencarton\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#10 C:\wamp\www\meubleencarton\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#12 C:\wamp\www\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-05 18:24:04 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1044] Access denied for user \'\'@\'localhost\' to database \'hackaton\'',
+  'enabled' => true,
+)
+Request URL: /meubleencarton/Pages/display
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\wamp\www\meubleencarton\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(3617): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(3644): Model->setSource('is_highlighteds')
+#5 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(3022): Model->getDataSource()
+#6 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(2994): Model->_readDataSource('all', Array)
+#7 C:\wamp\www\meubleencarton\app\Controller\PagesController.php(46): Model->find('all', Array)
+#8 [internal function]: PagesController->display()
+#9 C:\wamp\www\meubleencarton\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#10 C:\wamp\www\meubleencarton\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#12 C:\wamp\www\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-05 18:24:06 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1044] Access denied for user \'\'@\'localhost\' to database \'hackaton\'',
+  'enabled' => true,
+)
+Request URL: /meubleencarton/Pages/display
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\wamp\www\meubleencarton\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(3617): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(3644): Model->setSource('is_highlighteds')
+#5 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(3022): Model->getDataSource()
+#6 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(2994): Model->_readDataSource('all', Array)
+#7 C:\wamp\www\meubleencarton\app\Controller\PagesController.php(46): Model->find('all', Array)
+#8 [internal function]: PagesController->display()
+#9 C:\wamp\www\meubleencarton\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#10 C:\wamp\www\meubleencarton\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#12 C:\wamp\www\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
