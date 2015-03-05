@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 6b16585455dd8d104abd837c3cead64d3f052701
 <h1><center>Hackaton!</center></h1>
 <head>
     <meta charset="utf-8" />
@@ -48,10 +44,6 @@
   </a>
 </div>
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 6b16585455dd8d104abd837c3cead64d3f052701
 <div>
 	<?php foreach ($items as $key => $value): ?>
 		<div class="name"><?php echo $value['Article']['name'] ?></div>
@@ -60,7 +52,4 @@
 		<div class="high-descr"><?php echo $value['Highlight']['description'] ?></div>
 	<?php endforeach ?>
 </div>
-<<<<<<< HEAD
-=======
 
->>>>>>> 6b16585455dd8d104abd837c3cead64d3f052701
