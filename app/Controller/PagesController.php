@@ -32,6 +32,14 @@ class PagesController extends AppController {
 
 	public $helpers = array ('Html', 'Item');
 
+
+	public function beforeFilter() {
+		$this->Auth->allow();	
+	}
+
+
+
+
 	public function display() {
 		$this->loadModel('IsHighlighted');
 

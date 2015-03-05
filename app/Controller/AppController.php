@@ -32,6 +32,46 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 
-	public $components = array('DebugKit.Toolbar');
+	public $components = array('DebugKit.Toolbar', 'Auth', 'Session');
+
+		public function beforeFilter()
+	{/*
+		if($this->Auth->user() != null){
+			if($this->Auth->user('Right.name') == 'admin'){
+				$this->layout = 'admin';	
+			}
+		}
+		*/
+/*
+		if(($this->Auth->user('User.firstconnection') == 0) && ($this->request->url != 'users/modifMdp'))
+		{
+			$this->redirect('/users/modifMdp');
+		}
+*/
+	}
+	
+	public function isAuthorized($user)
+	{
+		if(!isset($this->request->params['prefix']))
+			return true;
+
+		$roles = array(
+			'admin' => 10,
+			'user'  => 5
+		);
+
+		if(isset($roles[$this->request->params['prefix']]))
+		{
+			$lvlAction = $roles[$this->request->params['prefix']];
+			$lvlUser = $roles[$user['Right']['name']];
+			if($lvlUser >= $lvlAction)
+				return true;
+		}
+
+		$this->Session->setFlash('<strong>Erreur :</strong> Vous n\'avez pas les droits pour acceder a cette section', 'flash_warning');
+		return false;
+	}
 
 }
+
+

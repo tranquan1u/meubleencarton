@@ -3,9 +3,11 @@
 class VotesController extends AppController{
     
     public $helpers = array ('Html');
-    public $scaffold;
+    //public $scaffold;
 
-
+    public function beforeFilter() {
+        $this->Auth->allow();
+    }
 
     public function nblike($id){
       return $this->Vote->find('count', array('order' => 'Vote.article_id',
