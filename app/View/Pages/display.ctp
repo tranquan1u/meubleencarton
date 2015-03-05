@@ -29,11 +29,13 @@
 					<div class="high-descr"><?php echo $value['Highlight']['description'] ?></div>
 		        </center>
 		      <div class="carousel-caption">
-
 		      </div>
 		    </div>
     <?php $i++ ?>
 <?php endforeach ?>
+<br>
+<br>
+<br>
   <!-- Controls -->
   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>

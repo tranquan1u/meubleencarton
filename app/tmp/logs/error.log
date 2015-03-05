@@ -2363,3 +2363,118 @@ Request URL: /meubleencarton/js/vote.js
 Stack Trace:
 #0 C:\wamp\www\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-03-05 20:33:03 Error: [MissingControllerException] Controller class AfficherController could not be found.
+Exception Attributes: array (
+  'class' => 'AfficherController',
+  'plugin' => NULL,
+)
+Request URL: /meubleencarton/afficher
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-05 20:33:25 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /meubleencarton/img/tortu_rouge.jpg
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-05 20:41:02 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /meubleencarton/Pages/display
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\wamp\www\meubleencarton\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(3617): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(3644): Model->setSource('is_highlighteds')
+#5 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(3022): Model->getDataSource()
+#6 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(2994): Model->_readDataSource('all', Array)
+#7 C:\wamp\www\meubleencarton\app\Controller\PagesController.php(46): Model->find('all', Array)
+#8 [internal function]: PagesController->display()
+#9 C:\wamp\www\meubleencarton\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#10 C:\wamp\www\meubleencarton\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#12 C:\wamp\www\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-05 20:43:13 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /meubleencarton/js/vote.js
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-05 20:43:13 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /meubleencarton/js/vote.js
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-05 20:43:44 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+Request URL: /meubleencarton/votes/like/1
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\wamp\www\meubleencarton\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `ha...', Array)
+#2 C:\wamp\www\meubleencarton\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `ha...')
+#3 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(1928): DboSource->create(Object(Vote), Array, Array)
+#4 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(1751): Model->_doSave(Array, Array)
+#5 C:\wamp\www\meubleencarton\app\Controller\VotesController.php(33): Model->save(Array)
+#6 [internal function]: VotesController->like('1')
+#7 C:\wamp\www\meubleencarton\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(VotesController), Array)
+#8 C:\wamp\www\meubleencarton\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(VotesController), Object(CakeRequest))
+#10 C:\wamp\www\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-03-05 20:43:44 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+Request URL: /meubleencarton/votes/like/1
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\wamp\www\meubleencarton\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `ha...', Array)
+#2 C:\wamp\www\meubleencarton\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `ha...')
+#3 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(1928): DboSource->create(Object(Vote), Array, Array)
+#4 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(1751): Model->_doSave(Array, Array)
+#5 C:\wamp\www\meubleencarton\app\Controller\VotesController.php(33): Model->save(Array)
+#6 [internal function]: VotesController->like('1')
+#7 C:\wamp\www\meubleencarton\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(VotesController), Array)
+#8 C:\wamp\www\meubleencarton\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(VotesController), Object(CakeRequest))
+#10 C:\wamp\www\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-03-05 20:44:17 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /meubleencarton/img/tortu_rouge.jpg
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-05 20:44:28 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /meubleencarton/img/tortu_rouge.jpg
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-05 20:47:20 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /meubleencarton/img/tortu_rouge.jpg
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
