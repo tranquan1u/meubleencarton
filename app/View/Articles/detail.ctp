@@ -9,6 +9,7 @@
             <td> </td>
             <td> </td>
             <td> </td>
+            <td> </td>
         </tr>
         <?php              
   
@@ -40,6 +41,14 @@
                     $nblikes = $this->requestAction('/votes/nblike/'.$id);
                    
                     echo $nblikes;  ?>
+               </td>
+               
+               <td>
+                   <?php 
+                    $user_id = AuthComponent::user('id');
+                    echo $this->Html->link('lire les commentaires', array('controller' => 'comments',
+                                                  'action' => 'read',$id
+                                                  ))?>
                </td>
                
                <td>

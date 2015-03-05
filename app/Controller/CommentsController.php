@@ -18,13 +18,24 @@ class CommentsController extends AppController{
                                 'article_id' => $id_article,
                                 'user_id'    => $id_user,
                                 'name'       => $comment['Comment']['name'],
-                                'text'       => $comment['Comment']['text']
+                                'text'       => $comment['Comment']['text'],
+                                'note'       => $comment['Comment']['note']
                                 ));
 
                    // $username = $this->Auth->user('username');
                     $this->redirect('/articles/detail/'.$id_article);
             }
       //  }
+    }
+    
+    
+    public function read($id){
+        $comments = $this->Comment->find('all', array('order' => 'Comment.id',
+                                         'conditions' => array('Comment.article_id' => $id)));
+        $this->set(array(
+                        'id' => $id, 
+                   'comments' => $comments)
+                   );
     }
 }
   
