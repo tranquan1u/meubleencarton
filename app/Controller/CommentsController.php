@@ -26,6 +26,16 @@ class CommentsController extends AppController{
             }
       //  }
     }
+    
+    
+    public function read($id){
+        $comments = $this->Comment->find('all', array('order' => 'Comment.id',
+                                         'conditions' => array('Comment.article_id' => $id)));
+        $this->set(array(
+                        'id' => $id, 
+                   'comments' => $comments)
+                   );
+    }
 }
   
 
