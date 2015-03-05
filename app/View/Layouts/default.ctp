@@ -31,8 +31,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->Html->css('style.css');
 
         echo $this->Js->set('url',$this->request->base);
-		echo $this->Html->script('bootstrap.js');
         echo $this->Html->script('jquery.js');
+		echo $this->Html->script('bootstrap.js');
        
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -69,7 +69,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			      <ul class="nav navbar-nav navbar-right">
 			      <?php if (AuthComponent::user('id') != null): ?>
 			        <li class="dropdown">
-			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <span class="caret"></span></a>
 			          <ul class="dropdown-menu" role="menu">
 			            <li><?php echo $this->Html->link('Profil', '/users/profil') ?></li>
 			            <li class="divider"></li>
