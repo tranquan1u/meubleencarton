@@ -2336,3 +2336,30 @@ Request URL: /meubleencarton/css/sky.jpg
 Stack Trace:
 #0 C:\wamp\www\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-03-05 20:26:17 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /meubleencarton/img/tortu_rouge.jpg
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-05 20:26:36 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /meubleencarton/js/vote.js
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-05 20:26:37 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /meubleencarton/js/vote.js
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
