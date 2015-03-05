@@ -8,6 +8,7 @@
             <td>nbLike</td>
             <td> </td>
             <td> </td>
+            <td> </td>
         </tr>
         <?php              
   
@@ -48,7 +49,13 @@
                </td>
                
                <td>
-                    <?php echo $this->Html->link('ajouter', array('controller' => 'articles',
+                   <?php echo $this->Html->link('ajouter commentaire', array('controller' => 'comments',
+                                                  'action' => 'add',$id,1
+                                                  ))?>      
+               </td>
+               
+               <td>
+                    <?php echo $this->Html->link('ajouter au panier', array('controller' => 'articles',
                                                   'action' => 'ajouter',$id
                                                   ))?>
                     </td>
