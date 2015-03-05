@@ -43,14 +43,16 @@
                </td>
                
                <td>
-                    <?php echo $this->Html->link('like', array('controller' => 'votes',
-                                                  'action' => 'like',$id,1
+                    <?php 
+                    $user_id = AuthComponent::user('id');
+                    echo $this->Html->link('like', array('controller' => 'votes',
+                                                  'action' => 'like',$id,$user_id
                                                   ))?>                   
                </td>
                
                <td>
                    <?php echo $this->Html->link('ajouter commentaire', array('controller' => 'comments',
-                                                  'action' => 'add',$id,1
+                                                  'action' => 'add',$id,$user_id
                                                   ))?>      
                </td>
                

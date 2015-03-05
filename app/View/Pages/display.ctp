@@ -1,4 +1,3 @@
-
 <h1><center>Hackaton!</center></h1>
 <head>
     <meta charset="utf-8" />
@@ -44,7 +43,6 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-
 
 <div>
 	<?php foreach ($items as $key => $value): ?>
