@@ -1,9 +1,9 @@
   <table border="1">
         <tr>
-            <td>Nom de l'item</td>
+            <td>Nom du commentaire</td>
             <td>commentaire</td>
             <td>date de creation</td>
-            <td>date update</td>
+            <td>note</td>
         </tr>
         <?php              
   
@@ -25,7 +25,7 @@
                </td>
                
                <td>
-                   <?php echo $comment['Comment']['updated']; ?>
+                   <?php echo $comment['Comment']['note']; ?>
                </td>
                
 
