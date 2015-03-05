@@ -43,8 +43,10 @@
                </td>
                
                <td>
-                    <?php echo $this->Html->link('like', array('controller' => 'votes',
-                                                  'action' => 'like',$id,1
+                    <?php 
+                    $user_id = AuthComponent::user('id');
+                    echo $this->Html->link('like', array('controller' => 'votes',
+                                                  'action' => 'like',$id,$user_id
                                                   ))?>                   
                </td>
                
