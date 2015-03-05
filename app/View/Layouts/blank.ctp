@@ -1,5 +1,8 @@
 <?php
 /**
+ *
+ * PHP 5
+ *
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
  * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
  *
@@ -15,33 +18,30 @@
  */
 
 $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
-$cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		Hackaton
+		<?php echo $cakeDescription ?>:
+		<?php echo $title_for_layout; ?>
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('bootstrap.min.css');
-		echo $this->Html->css('style.css');
+		//echo $this->Html->css('cake.generic');
+		echo $this->Html->css('bootstrap');
+		echo $this->Html->css('style');
 
-        echo $this->Js->set('url',$this->request->base);
-        echo $this->Html->script('jquery.js');
-		echo $this->Html->script('bootstrap.js');
-       
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
 </head>
 <body>
-	<div id="container">
-		<div id="header">
+	<div id="blank-container">
+<div id="header">
 			<nav class="navbar navbar-default">
 			  <div class="container-fluid">
 			    <!-- Brand and toggle get grouped for better mobile display -->
@@ -60,43 +60,30 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			      <ul class="nav navbar-nav">
 			        <li class="active"><?php echo $this->Html->link('Tous les Articles', '/Articles/afficher') ?></li>
 			      </ul>
-			      <form class="navbar-form navbar-left" role="search">
-			        <div class="form-group">
-			          <input type="text" class="form-control" placeholder="Search">
-			        </div>
-			        <button type="submit" class="btn btn-default">Submit</button>
-			      </form>
-			      <ul class="nav navbar-nav navbar-right">
-			      <?php if (AuthComponent::user('id') != null): ?>
-			        <li class="dropdown">
-			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <span class="glyphicon glyphicon-cog"></span></a>
-			          <ul class="dropdown-menu" role="menu">
-			            <li><?php echo $this->Html->link('Profil', '/users/profil') ?></li>
-			            <li class="divider"></li>
-			            <li><?php echo $this->Html->link('Déconexion', '/users/logout') ?></li>
-			          </ul>
-			        </li>
-			      <?php else: ?>
-			      	<li><?php echo $this->Html->link('Connexion', '/users/login') ?></li>
-			      <?php endif ?>
-			      </ul>
-			    </div><!-- /.navbar-collapse -->
+			     </div>
 			  </div><!-- /.container-fluid -->
 			</nav>
 		</div>
-		<div id="content">
 
-			<?php echo $this->Session->flash(); ?>
+			<div class="row">
+				<div class="col-md-10">
+					<section>
+						<?php $this->Session->Flash('auth'); ?>
+						<?php echo $this->Session->flash(); ?>
 
-			<?php echo $this->fetch('content'); ?>
+						<?php echo $this->fetch('content'); ?>
+					</section>
+
+					<div id="footer">
+						<?php echo $this->Html->link(
+								$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
+								'http://www.cakephp.org/',
+								array('target' => '_blank', 'escape' => false)
+							);
+						?>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div id="footer">
-			<p>
-			
-			</p>
-		</div>
-	</div>
-    <?php echo $scripts_for_layout; ?>
-    
 </body>
 </html>

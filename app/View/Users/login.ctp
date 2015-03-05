@@ -23,7 +23,7 @@
 					<?php 	echo $this->Form->button('Se connnecter', array('class'=> 'controls btn btn-primary',
 						));
 
-						echo $this->Html->link(" pas encore inscrit?", array('action'=>'inscription','controller'=>'Users'));?>
+						//echo $this->Html->link(" pas encore inscrit?", array('action'=>'inscription','controller'=>'Users'));?>
 
 					</div>
 					<?php echo $this->Form->end(); 

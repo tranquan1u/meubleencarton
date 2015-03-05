@@ -4,7 +4,7 @@ class UsersController extends AppController {
 
 public function login()
 	{
-		//$this->layout = 'blank';
+		$this->layout = 'blank';
 
 		//$this->User->create();
 		//$this->User->save(array('username' =>'root', 'password' => $this->Auth->password('toor'), 'access' => 1));
@@ -20,9 +20,8 @@ public function login()
 		
 	}
 
-	public function logout()
-	{
-		return $this->redirect('/');
-	}
+public function logout() {
+    return $this->redirect($this->Auth->logout());
+}
 
 }
