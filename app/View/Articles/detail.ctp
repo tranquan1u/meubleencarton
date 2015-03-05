@@ -52,7 +52,7 @@
                
                <td>
                    <?php echo $this->Html->link('ajouter commentaire', array('controller' => 'comments',
-                                                  'action' => 'add',$id,1
+                                                  'action' => 'add',$id,$user_id
                                                   ))?>      
                </td>
                
