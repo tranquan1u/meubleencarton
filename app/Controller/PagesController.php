@@ -29,7 +29,14 @@ App::uses('AppController', 'Controller');
  * @link http://book.cakephp.org/2.0/en/controllers/pages-controller.html
  */
 class PagesController extends AppController {
-	public function display() {
 
+	public $helpers = array ('Html', 'Item');
+
+	public function display() {
+		$this->loadModel('IsHighlighted');
+
+		$article = $this->IsHighlighted->find('all', array('recursive' => 2));
+
+		$this->set(array('items' => $article));
 	}
 }

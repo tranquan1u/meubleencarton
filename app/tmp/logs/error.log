@@ -677,3 +677,60 @@ Request URL: /meubleencarton/img/chemin/chemin
 Stack Trace:
 #0 C:\wamp\www\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-03-05 15:10:33 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\wamp\www\meubleencarton\app\Controller\PagesController.php, line 38]
+2015-03-05 15:10:33 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /meubleencarton/
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\meu...', 38)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\meu...', 38, Array)
+#2 C:\wamp\www\meubleencarton\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\meu...', 38, Array)
+#3 C:\wamp\www\meubleencarton\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-05 15:10:57 Error: [MissingTableException] Table is_highlighteds for model IsHighlighted was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'is_highlighteds',
+  'class' => 'IsHighlighted',
+  'ds' => 'default',
+)
+Request URL: /meubleencarton/
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(3644): Model->setSource('is_highlighteds')
+#1 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(3022): Model->getDataSource()
+#2 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(2994): Model->_readDataSource('all', Array)
+#3 C:\wamp\www\meubleencarton\app\Controller\PagesController.php(38): Model->find('all', Array)
+#4 [internal function]: PagesController->display('home')
+#5 C:\wamp\www\meubleencarton\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#6 C:\wamp\www\meubleencarton\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#7 C:\wamp\www\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#8 C:\wamp\www\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-03-05 15:13:29 Error: Fatal Error (1): Call to undefined method View::Item() in [C:\wamp\www\meubleencarton\app\View\Pages\display.ctp, line 3]
+2015-03-05 15:13:29 Error: [FatalErrorException] Call to undefined method View::Item()
+Request URL: /meubleencarton/
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\wamp\\www\\meu...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\wamp\\www\\meu...', 3, Array)
+#2 C:\wamp\www\meubleencarton\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\wamp\\www\\meu...', 3, Array)
+#3 C:\wamp\www\meubleencarton\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-05 15:13:54 Error: Fatal Error (1): Call to undefined method View::Item() in [C:\wamp\www\meubleencarton\app\View\Pages\display.ctp, line 3]
+2015-03-05 15:13:54 Error: [FatalErrorException] Call to undefined method View::Item()
+Request URL: /meubleencarton/
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\wamp\\www\\meu...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\wamp\\www\\meu...', 3, Array)
+#2 C:\wamp\www\meubleencarton\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\wamp\\www\\meu...', 3, Array)
+#3 C:\wamp\www\meubleencarton\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-05 15:22:49 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /meubleencarton/img/chemin/chemin
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
