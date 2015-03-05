@@ -1,21 +1,11 @@
 <h1>Hackaton!</h1>
-<?php debug($items) ?>
 
 
-<table class="table">
-	<tbody>
-		$i = 0;
-		<?php foreach ($items as $key => $value): ?>
-
-			<tr>
-				<?php $article = $value['Article'] ?>
-				<?php foreach ($article as $key => $value): ?>
-					
-				<?php endforeach ?>
-
-			</tr>	
-
-			<?php if ($i == 3) break; ?>
-		<?php endforeach ?>
-	</tbody>
-</table>
+<div>
+	<?php foreach ($items as $key => $value): ?>
+		<div class="name"><?php echo $value['Article']['name'] ?></div>
+		<div class="desc"><?php echo $value['Article']['description'] ?></div>
+		<div class="high-descr"><?php echo $value['Highlight']['name'] ?></div>
+		<div class="high-descr"><?php echo $value['Highlight']['description'] ?></div>
+	<?php endforeach ?>
+</div>
