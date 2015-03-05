@@ -1,11 +1,8 @@
-<<<<<<< HEAD
+
 <h1><center>Hackaton!</center></h1>
 <head>
     <meta charset="utf-8" />
 </head>
-=======
-<h1>Hackaton!</h1>
->>>>>>> 0822ef59544c308fd9592f2ada82d8e548e7caac
 
 <body>
 <?php //debug($items) ?>
@@ -48,23 +45,7 @@
   </a>
 </div>
 
-<<<<<<< HEAD
-<table class="table">
-	<tbody>
-		<! $i = 0; ..>
-		<?php foreach ($items as $key => $value): ?>
 
-			<tr>
-				<?php $article = $value['Article'] ?>
-				<?php foreach ($article as $key => $value): ?>					
-				<?php endforeach ?>
-			</tr>	
-
-			<?php// if ($i == 3) break; ?>
-		<?php endforeach ?>
-	</tbody>
-</table>
-=======
 <div>
 	<?php foreach ($items as $key => $value): ?>
 		<div class="name"><?php echo $value['Article']['name'] ?></div>
@@ -73,4 +54,4 @@
 		<div class="high-descr"><?php echo $value['Highlight']['description'] ?></div>
 	<?php endforeach ?>
 </div>
->>>>>>> 0822ef59544c308fd9592f2ada82d8e548e7caac
+
