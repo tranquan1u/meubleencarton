@@ -39,3 +39,274 @@ Stack Trace:
 #3 /home/nico/Programmation/www/private/hackaton/lib/Cake/Core/App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2015-03-05 10:39:32 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[42000] [1044] Access denied for user \'\'@\'localhost\' to database \'hackaton\'',
+  'enabled' => true,
+)
+Request URL: /hackaton/meubleencarton/articles/afficher
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Model\Model.php(3617): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Model\Model.php(3644): Model->setSource('articles')
+#5 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Model\Model.php(3022): Model->getDataSource()
+#6 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Model\Model.php(2994): Model->_readDataSource('all', Array)
+#7 C:\wamp\www\hackaton\meubleencarton\app\Controller\ArticlesController.php(10): Model->find('all', Array)
+#8 [internal function]: ArticlesController->afficher()
+#9 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ArticlesController), Array)
+#10 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#12 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-05 10:57:40 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[42000] [1044] Access denied for user \'\'@\'localhost\' to database \'hackaton\'',
+  'enabled' => true,
+)
+Request URL: /hackaton/meubleencarton/articles/afficher
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Model\Model.php(3617): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Model\Model.php(3644): Model->setSource('articles')
+#5 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Model\Model.php(3022): Model->getDataSource()
+#6 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Model\Model.php(2994): Model->_readDataSource('all', Array)
+#7 C:\wamp\www\hackaton\meubleencarton\app\Controller\ArticlesController.php(10): Model->find('all', Array)
+#8 [internal function]: ArticlesController->afficher()
+#9 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ArticlesController), Array)
+#10 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#12 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-05 10:57:43 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[42000] [1044] Access denied for user \'\'@\'localhost\' to database \'hackaton\'',
+  'enabled' => true,
+)
+Request URL: /hackaton/meubleencarton/articles/afficher
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Model\Model.php(3617): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Model\Model.php(3644): Model->setSource('articles')
+#5 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Model\Model.php(3022): Model->getDataSource()
+#6 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Model\Model.php(2994): Model->_readDataSource('all', Array)
+#7 C:\wamp\www\hackaton\meubleencarton\app\Controller\ArticlesController.php(10): Model->find('all', Array)
+#8 [internal function]: ArticlesController->afficher()
+#9 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ArticlesController), Array)
+#10 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#12 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-05 11:01:43 Error: [MissingActionException] Action ArticlesController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'ArticlesController',
+  'action' => 'index',
+)
+Request URL: /hackaton/meubleencarton/articles/
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#2 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-05 11:01:58 Error: [MissingActionException] Action ArticlesController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'ArticlesController',
+  'action' => 'index',
+)
+Request URL: /hackaton/meubleencarton/articles/
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#2 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-05 11:08:23 Error: [MissingControllerException] Controller class HackatonController could not be found.
+Exception Attributes: array (
+  'class' => 'HackatonController',
+  'plugin' => NULL,
+)
+Request URL: /hackaton/meubleencarton/hackaton/meubleencarton/media
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-05 11:08:53 Error: [MissingControllerException] Controller class HackatonController could not be found.
+Exception Attributes: array (
+  'class' => 'HackatonController',
+  'plugin' => NULL,
+)
+Request URL: /hackaton/meubleencarton/hackaton/meubleencarton/colors
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-05 11:10:10 Error: [MissingControllerException] Controller class HackatonController could not be found.
+Exception Attributes: array (
+  'class' => 'HackatonController',
+  'plugin' => NULL,
+)
+Request URL: /hackaton/meubleencarton/hackaton/meubleencarton/colors
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-05 11:10:18 Error: Fatal Error (64): Cannot redeclare Article::$hasOne in [C:\wamp\www\hackaton\meubleencarton\app\Model\Article.php, line 5]
+2015-03-05 11:10:18 Error: [FatalErrorException] Cannot redeclare Article::$hasOne
+Request URL: /hackaton/meubleencarton/articles
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\wamp\www\hac...', 5)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\wamp\www\hac...', 5, Array)
+#2 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'C:\wamp\www\hac...', 5, Array)
+#3 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-05 11:10:28 Error: Fatal Error (64): Cannot redeclare Article::$hasOne in [C:\wamp\www\hackaton\meubleencarton\app\Model\Article.php, line 5]
+2015-03-05 11:10:28 Error: [FatalErrorException] Cannot redeclare Article::$hasOne
+Request URL: /hackaton/meubleencarton/articles
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\wamp\www\hac...', 5)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\wamp\www\hac...', 5, Array)
+#2 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'C:\wamp\www\hac...', 5, Array)
+#3 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-05 11:11:21 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Media.article_id' in 'on clause'
+Request URL: /hackaton/meubleencarton/articles
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Article...', Array)
+#2 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Model\Datasource\DboSource.php(668): DboSource->execute('SELECT `Article...', Array, Array)
+#3 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Article...', false)
+#4 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Model\Model.php(3022): DboSource->read(Object(Article), Array)
+#5 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Model\Model.php(2994): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#7 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Controller.php(1086): PaginatorComponent->paginate(NULL, Array, Array)
+#8 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Scaffold.php(189): Controller->paginate()
+#9 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Scaffold.php(383): Scaffold->_scaffoldIndex(Object(CakeRequest))
+#10 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Scaffold.php(150): Scaffold->_scaffold(Object(CakeRequest))
+#11 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ArticlesController), Object(CakeRequest))
+#12 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#13 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#15 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2015-03-05 11:13:01 Error: [MissingControllerException] Controller class HackatonController could not be found.
+Exception Attributes: array (
+  'class' => 'HackatonController',
+  'plugin' => NULL,
+)
+Request URL: /hackaton/meubleencarton/hackaton/meubleencarton/articles
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-05 11:20:57 Error: [MissingActionException] Action Articles::cake.icon.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'Articles',
+  'action' => 'cake.icon.png',
+)
+Request URL: /hackaton/meubleencarton/articles/cake.icon.png
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Scaffold.php(150): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ArticlesController), Object(CakeRequest))
+#2 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#5 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-03-05 11:21:03 Error: [MissingActionException] Action Articles::cake.icon.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'Articles',
+  'action' => 'cake.icon.png',
+)
+Request URL: /hackaton/meubleencarton/articles/cake.icon.png
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Scaffold.php(150): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ArticlesController), Object(CakeRequest))
+#2 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#5 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-03-05 11:21:24 Error: [MissingActionException] Action Articles::cake.icon.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'Articles',
+  'action' => 'cake.icon.png',
+)
+Request URL: /hackaton/meubleencarton/articles/cake.icon.png
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Scaffold.php(150): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ArticlesController), Object(CakeRequest))
+#2 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#5 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-03-05 11:22:36 Error: [MissingActionException] Action Articles::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'Articles',
+  'action' => 'img',
+)
+Request URL: /hackaton/meubleencarton/articles/img/cake.icon.png
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Scaffold.php(150): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ArticlesController), Object(CakeRequest))
+#2 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#5 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-03-05 11:22:52 Error: [MissingActionException] Action Articles::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'Articles',
+  'action' => 'img',
+)
+Request URL: /hackaton/meubleencarton/articles/img/cake.icon.png
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Scaffold.php(150): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ArticlesController), Object(CakeRequest))
+#2 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#5 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-03-05 11:23:31 Error: [MissingActionException] Action Articles::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'Articles',
+  'action' => 'img',
+)
+Request URL: /hackaton/meubleencarton/articles/img/cake.icon.png
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Scaffold.php(150): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ArticlesController), Object(CakeRequest))
+#2 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#5 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-03-05 11:26:14 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /hackaton/meubleencarton/img/img/cake.icon.png
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-05 11:32:57 Error: [MissingActionException] Action Articles::acheter() could not be found.
+Exception Attributes: array (
+  'controller' => 'Articles',
+  'action' => 'acheter',
+)
+Request URL: /hackaton/meubleencarton/articles/acheter/1%3Eacheter%3C/a%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cform%20action=
+Stack Trace:
+#0 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Scaffold.php(150): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ArticlesController), Object(CakeRequest))
+#2 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#5 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
