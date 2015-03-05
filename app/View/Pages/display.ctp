@@ -13,26 +13,27 @@
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
   </ol>
 
-  <!-- Wrapper for slides -->
+
+
+	
   <div class="carousel-inner" role="listbox">
-    <div class="item active">
-        <center>
-        <?php echo $this->Html->image('sofa_gonflable.jpg', array('altenrate' => 'l\'image ne s\'affiche pas ', 'class'=>'item')) ?>
-        </center>
-      <div class="carousel-caption">
-      </div>
-    </div>
+	  <!-- Wrapper for slides -->
+	  	<?php $i=0 ?>
+		<?php foreach ($items as $key => $value): ?>
+		    <div class="item <?php echo ($i==0)? 'active' :  '' ?>">
+		        <center>
+		        <?php echo $this->Html->image($value['Article']['Media']['path'], array('altenrate' => 'l\'image ne s\'affiche pas ', 'class'=>'item')) ?>
+	        		<div class="name"><?php echo $value['Article']['name'] ?></div>
+					<div class="desc"><?php echo $value['Article']['description'] ?></div>
+					<div class="high-descr"><?php echo $value['Highlight']['name'] ?></div>
+					<div class="high-descr"><?php echo $value['Highlight']['description'] ?></div>
+		        </center>
+		      <div class="carousel-caption">
 
-
-    <div class="item">
-        <center>
-        <?php echo $this->Html->image('cake.icon.png', array('alternate' => 'l\'image ne s\'affiche pas ', 'class'=>'item active')) ?>
-        </center>
-      <div class="carousel-caption">
-      </div>
-    </div>
-  </div>
-
+		      </div>
+		    </div>
+    <?php $i++ ?>
+<?php endforeach ?>
   <!-- Controls -->
   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -42,14 +43,5 @@
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-</div>
-
-<div>
-	<?php foreach ($items as $key => $value): ?>
-		<div class="name"><?php echo $value['Article']['name'] ?></div>
-		<div class="desc"><?php echo $value['Article']['description'] ?></div>
-		<div class="high-descr"><?php echo $value['Highlight']['name'] ?></div>
-		<div class="high-descr"><?php echo $value['Highlight']['description'] ?></div>
-	<?php endforeach ?>
 </div>
 
