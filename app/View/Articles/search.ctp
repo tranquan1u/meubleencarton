@@ -1,4 +1,5 @@
-<?php echo $this->Form->create('Article', array('role' => 'form', 'class' => 'form-inline', 'action' => 'search')) ?>
+
+	<?php echo $this->Form->create('Article', array('role' => 'form', 'class' => 'form-inline', 'action' => 'search')) ?>
 	<div class="form-group">
 		<?php 
 			$options = array('color' => 'color',
@@ -12,4 +13,3 @@
 
 	<?php echo $this->Form->end('Rechercher'); ?>
 	<?php debug($articles) ?>
-
