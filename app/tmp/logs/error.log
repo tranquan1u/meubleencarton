@@ -310,3 +310,201 @@ Stack Trace:
 #4 C:\wamp\www\hackaton\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
 #5 C:\wamp\www\hackaton\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
+2015-03-05 13:00:43 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1049] Unknown database \'hackaton\'',
+  'enabled' => true,
+)
+Request URL: /meubleencarton/articles/search
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\wamp\www\meubleencarton\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(3617): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(3644): Model->setSource('articles')
+#5 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(1387): Model->getDataSource()
+#6 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(1483): Model->schema()
+#7 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(1470): Model->hasField('title', false)
+#8 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(907): Model->hasField(Array)
+#9 C:\wamp\www\meubleencarton\lib\Cake\Controller\Scaffold.php(130): Model->__get('displayField')
+#10 C:\wamp\www\meubleencarton\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ArticlesController), Object(CakeRequest))
+#11 C:\wamp\www\meubleencarton\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#12 C:\wamp\www\meubleencarton\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#14 C:\wamp\www\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-03-05 13:01:38 Error: [MissingActionException] Action Articles::search() could not be found.
+Exception Attributes: array (
+  'controller' => 'Articles',
+  'action' => 'search',
+)
+Request URL: /meubleencarton/articles/search
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\lib\Cake\Controller\Scaffold.php(150): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\wamp\www\meubleencarton\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ArticlesController), Object(CakeRequest))
+#2 C:\wamp\www\meubleencarton\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\wamp\www\meubleencarton\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\wamp\www\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#5 C:\wamp\www\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-03-05 13:01:54 Error: Fatal Error (4): syntax error, unexpected '}', expecting variable (T_VARIABLE) or '$' in [C:\wamp\www\meubleencarton\app\Controller\ArticlesController.php, line 20]
+2015-03-05 13:01:54 Error: [FatalErrorException] syntax error, unexpected '}', expecting variable (T_VARIABLE) or '$'
+Request URL: /meubleencarton/articles/search
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\meu...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\meu...', 20, Array)
+#2 C:\wamp\www\meubleencarton\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\meu...', 20, Array)
+#3 C:\wamp\www\meubleencarton\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-05 13:02:07 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [C:\wamp\www\meubleencarton\app\View\Articles\search.ctp, line 1]
+2015-03-05 13:02:07 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+Request URL: /meubleencarton/articles/search
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\meu...', 1)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\meu...', 1, Array)
+#2 C:\wamp\www\meubleencarton\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\meu...', 1, Array)
+#3 C:\wamp\www\meubleencarton\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-05 13:04:22 Error: Fatal Error (64): Cannot use [] for reading in [C:\wamp\www\meubleencarton\app\Controller\ArticlesController.php, line 18]
+2015-03-05 13:04:22 Error: [FatalErrorException] Cannot use [] for reading
+Request URL: /meubleencarton/articles/search
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot use [] f...', 'C:\\wamp\\www\\meu...', 18)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot use [] f...', 'C:\\wamp\\www\\meu...', 18, Array)
+#2 C:\wamp\www\meubleencarton\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot use [] f...', 'C:\\wamp\\www\\meu...', 18, Array)
+#3 C:\wamp\www\meubleencarton\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-05 13:16:17 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\wamp\www\meubleencarton\app\Controller\ArticlesController.php, line 22]
+2015-03-05 13:16:17 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /meubleencarton/articles/search
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\meu...', 22)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\meu...', 22, Array)
+#2 C:\wamp\www\meubleencarton\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\meu...', 22, Array)
+#3 C:\wamp\www\meubleencarton\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-05 13:19:45 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'
+Request URL: /meubleencarton/articles/search
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\wamp\www\meubleencarton\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Article...', Array)
+#2 C:\wamp\www\meubleencarton\lib\Cake\Model\Datasource\DboSource.php(668): DboSource->execute('SELECT `Article...', Array, Array)
+#3 C:\wamp\www\meubleencarton\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Article...', false)
+#4 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(3022): DboSource->read(Object(Article), Array)
+#5 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(2994): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\meubleencarton\app\Controller\ArticlesController.php(22): Model->find('all', Array)
+#7 [internal function]: ArticlesController->search()
+#8 C:\wamp\www\meubleencarton\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ArticlesController), Array)
+#9 C:\wamp\www\meubleencarton\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#11 C:\wamp\www\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-03-05 13:20:47 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'
+Request URL: /meubleencarton/articles/search
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\wamp\www\meubleencarton\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Article...', Array)
+#2 C:\wamp\www\meubleencarton\lib\Cake\Model\Datasource\DboSource.php(668): DboSource->execute('SELECT `Article...', Array, Array)
+#3 C:\wamp\www\meubleencarton\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Article...', false)
+#4 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(3022): DboSource->read(Object(Article), Array)
+#5 C:\wamp\www\meubleencarton\lib\Cake\Model\Model.php(2994): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\meubleencarton\app\Controller\ArticlesController.php(23): Model->find('all', Array)
+#7 [internal function]: ArticlesController->search()
+#8 C:\wamp\www\meubleencarton\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ArticlesController), Array)
+#9 C:\wamp\www\meubleencarton\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#11 C:\wamp\www\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-03-05 13:37:48 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR) in [C:\wamp\www\meubleencarton\app\View\Articles\search.ctp, line 14]
+2015-03-05 13:37:48 Error: [FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Request URL: /meubleencarton/articles/search
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\meu...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\meu...', 14, Array)
+#2 C:\wamp\www\meubleencarton\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\meu...', 14, Array)
+#3 C:\wamp\www\meubleencarton\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-05 13:38:02 Error: [MissingHelperException] Helper class ArrayHelper could not be found.
+Exception Attributes: array (
+  'class' => 'ArrayHelper',
+  'plugin' => false,
+)
+Request URL: /meubleencarton/articles/search
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Array')
+#1 C:\wamp\www\meubleencarton\lib\Cake\View\View.php(848): HelperCollection->__isset('Array')
+#2 C:\wamp\www\meubleencarton\app\View\Articles\search.ctp(14): View->__get('Array')
+#3 C:\wamp\www\meubleencarton\lib\Cake\View\View.php(961): include('C:\\wamp\\www\\meu...')
+#4 C:\wamp\www\meubleencarton\lib\Cake\View\View.php(923): View->_evaluate('C:\\wamp\\www\\meu...', Array)
+#5 C:\wamp\www\meubleencarton\lib\Cake\View\View.php(473): View->_render('C:\\wamp\\www\\meu...')
+#6 C:\wamp\www\meubleencarton\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#7 C:\wamp\www\meubleencarton\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\wamp\www\meubleencarton\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#9 C:\wamp\www\meubleencarton\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-03-05 13:46:41 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\wamp\www\meubleencarton\app\Controller\ArticlesController.php, line 25]
+2015-03-05 13:46:41 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /meubleencarton/articles/search
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\meu...', 25)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\meu...', 25, Array)
+#2 C:\wamp\www\meubleencarton\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\meu...', 25, Array)
+#3 C:\wamp\www\meubleencarton\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-05 13:50:35 Error: Fatal Error (1): Cannot access empty property in [C:\wamp\www\meubleencarton\lib\Cake\Controller\Controller.php, line 437]
+2015-03-05 13:50:35 Error: [FatalErrorException] Cannot access empty property
+Request URL: /meubleencarton/articles/search
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Cannot access e...', 'C:\\wamp\\www\\meu...', 437)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', 'C:\\wamp\\www\\meu...', 437, Array)
+#2 C:\wamp\www\meubleencarton\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', 'C:\\wamp\\www\\meu...', 437, Array)
+#3 C:\wamp\www\meubleencarton\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-05 14:01:38 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\wamp\www\meubleencarton\app\Controller\ArticlesController.php, line 19]
+2015-03-05 14:01:38 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /meubleencarton/articles/search
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\meu...', 19)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\meu...', 19, Array)
+#2 C:\wamp\www\meubleencarton\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\meu...', 19, Array)
+#3 C:\wamp\www\meubleencarton\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-05 14:06:59 Error: Fatal Error (64): Cannot use [] for reading in [C:\wamp\www\meubleencarton\app\Controller\ArticlesController.php, line 22]
+2015-03-05 14:06:59 Error: [FatalErrorException] Cannot use [] for reading
+Request URL: /meubleencarton/articles/search
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot use [] f...', 'C:\\wamp\\www\\meu...', 22)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot use [] f...', 'C:\\wamp\\www\\meu...', 22, Array)
+#2 C:\wamp\www\meubleencarton\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot use [] f...', 'C:\\wamp\\www\\meu...', 22, Array)
+#3 C:\wamp\www\meubleencarton\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-05 14:07:16 Error: Fatal Error (4): syntax error, unexpected '}' in [C:\wamp\www\meubleencarton\app\Controller\ArticlesController.php, line 24]
+2015-03-05 14:07:16 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /meubleencarton/articles/search
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\meu...', 24)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\meu...', 24, Array)
+#2 C:\wamp\www\meubleencarton\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\meu...', 24, Array)
+#3 C:\wamp\www\meubleencarton\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-05 14:11:01 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\wamp\www\meubleencarton\app\Controller\ArticlesController.php, line 22]
+2015-03-05 14:11:01 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /meubleencarton/articles/search
+Stack Trace:
+#0 C:\wamp\www\meubleencarton\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\meu...', 22)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\meu...', 22, Array)
+#2 C:\wamp\www\meubleencarton\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\meu...', 22, Array)
+#3 C:\wamp\www\meubleencarton\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
